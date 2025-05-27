@@ -48,13 +48,13 @@ function App() {
     if (!file) return alert("ファイルを選択してください");
     const form = new FormData();
     form.append('file', file);
-    const res = await fetch('http://localhost:8000/upload', { method: 'POST', body: form });
+    const res = await fetch('/upload', { method: 'POST', body: form });
     const j = await res.json();
     alert(j.message);
   };
 
   const handleGenerate = async () => {
-    const res = await fetch('http://localhost:8000/generate', {
+    const res = await fetch('/generate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ user_input: input, use_rag: useRag })
@@ -80,7 +80,7 @@ function App() {
       <div>
         <h4>ファイル参照RAGオプション</h4>
         <input type="file" onChange={e => setFile(e.target.files[0])} />
-        <button onClick={handleUpload}>ファイルアップロード</button>
+        <button onClick={handleUpload}>ファイルアップロード（※現在この機能は無効化されています）</button>
         <label style={{ marginLeft: '1rem' }}>
           <input type="checkbox" checked={useRag} onChange={() => setUseRag(v => !v)} />
           参照資料を利用する
