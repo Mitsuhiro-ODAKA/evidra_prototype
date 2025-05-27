@@ -67,3 +67,5 @@ npm install
 npm run dev
 ```
 アプリ: http://localhost:5173
+
+![output_image](frontend/assets/output_image.png)
