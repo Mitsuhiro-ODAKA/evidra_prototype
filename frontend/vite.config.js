@@ -1,13 +1,18 @@
-// frontend/vite.config.js
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/generate': 'https://evidra-backend.onrender.com',
-      '/upload':   'https://evidra-backend.onrender.com',
+      '/generate': {
+        target: 'https://evidra-prototype-01.onrender.com',
+        changeOrigin: true,
+      },
+      '/upload': {
+        target: 'https://evidra-prototype-01.onrender.com',
+        changeOrigin: true,
+      }
     }
   }
-})
+});
