@@ -1,6 +1,6 @@
 annotated-types==0.7.0
 click==8.2.1
-faiss-cpu==1.11.0
+# faiss-cpu==1.11.0
 fastapi==0.115.12
 filelock==3.18.0
 fsspec==2025.5.1
@@ -21,7 +21,7 @@ regex==2024.11.6
 safetensors==0.5.3
 scikit-learn==1.6.1
 scipy==1.15.3
-sentence-transformers==4.1.0
+# sentence-transformers==4.1.0
 starlette==0.46.2
 sympy==1.14.0
 threadpoolctl==3.6.0
