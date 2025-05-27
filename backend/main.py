@@ -118,3 +118,14 @@ def generate_tree(data: PromptInput):
         tree_text = "エラー：出力が得られませんでした。"
 
     return {"tree": tree_text}
+
+from fastapi.staticfiles import StaticFiles
+import os
+
+# 既存の app 定義のあとに追記
+# frontend/dist がサーバ上に存在するパスを指定
+app.mount(
+    "/",
+    StaticFiles(directory=os.path.join(os.getcwd(), "frontend", "dist"), html=True),
+    name="static",
+)
