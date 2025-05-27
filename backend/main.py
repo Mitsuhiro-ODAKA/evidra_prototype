@@ -5,8 +5,6 @@ from dotenv import load_dotenv
 import os, requests, io
 import pandas as pd
 import PyPDF2
-from sentence_transformers import SentenceTransformer
-import faiss
 import numpy as np
 
 # 環境変数読み込み
