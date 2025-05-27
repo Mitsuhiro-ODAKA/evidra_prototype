@@ -29,7 +29,7 @@ Evidra は、自然言語やアップロードしたファイル（CSV/PDF）を
 │   ├── vite.config.js
 │   └── ...
 └── render.yaml        # Render.com 用自動デプロイ設定
-
+```
 ## 🚀 ローカル開発環境構築
 
 ### 前提条件
