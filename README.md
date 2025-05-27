@@ -41,7 +41,7 @@ Evidra は、自然言語やアップロードしたファイル（CSV/PDF）を
 ```bash
 git clone <REPO_URL>
 cd <repository>
-
+```
 ### 2. バックエンドセットアップ
 ```bash
 cd backend
