@@ -38,10 +38,6 @@ else:
     vector_index = None
     chunks = []
     
-# RAG 用エンベッダーとベクトルストア
-embedder = SentenceTransformer('all-MiniLM-L6-v2')
-vector_index = None
-chunks: list[str] = []
 
 # Together.ai 設定
 TOGETHER_API_KEY = os.getenv("TOGETHER_API_KEY")
