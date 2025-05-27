@@ -27,6 +27,19 @@ class PromptInput(BaseModel):
     user_input: str
     use_rag: bool = False
 
+DISABLE_RAG = os.getenv("DISABLE_RAG") == "1"
+
+if not DISABLE_RAG:
+    from sentence_transformers import SentenceTransformer
+    import faiss
+    embedder = SentenceTransformer('all-MiniLM-L6-v2')
+    vector_index = None
+    chunks: list[str] = []
+else:
+    embedder = None
+    vector_index = None
+    chunks = []
+    
 # RAG 用エンベッダーとベクトルストア
 embedder = SentenceTransformer('all-MiniLM-L6-v2')
 vector_index = None
