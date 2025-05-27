@@ -17,7 +17,6 @@ PyPDF2==3.0.1
 python-dotenv==1.1.0
 python-multipart==0.0.20
 pytz==2025.2
-pywin32==308
 regex==2024.11.6
 safetensors==0.5.3
 scikit-learn==1.6.1
