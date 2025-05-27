@@ -3,6 +3,8 @@
 
 Evidra は、自然言語やアップロードしたファイル（CSV/PDF）をもとに戦略ロジックツリー（ROICツリー・ToC）を自動生成・可視化するフルスタックプロジェクトです。
 
+![output_image](frontend/assets/output_image.png)
+
 - **フロントエンド**: React + Vite + Mermaid.js  
 - **バックエンド**: FastAPI + Together.ai Inference API + RAG (FAISS)
 
@@ -68,5 +70,3 @@ npm install
 npm run dev
 ```
 アプリ: http://localhost:5173
-
-![output_image](frontend/assets/output_image.png)
