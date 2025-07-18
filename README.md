@@ -3,7 +3,7 @@
 
 Evidra は、自然言語やアップロードしたファイル（CSV/PDF）をもとに戦略ロジックツリー（ROICツリー・ToC）を自動生成・可視化するフルスタックプロジェクトです。ローカル環境版ではRAGが使えます。Webアプリ版ではRender上のデータサイズ制限によりRAGが使えません。
 
-![](https://evidra-prototype-01.onrender.com/ fWebアプリ版)
+[▶︎Webアプリ版はこちら](https://evidra-prototype-01.onrender.com/)
 
 ![output_image](frontend/assets/output_image.png)
 
@@ -12,7 +12,7 @@ Evidra は、自然言語やアップロードしたファイル（CSV/PDF）を
 
 ---
 
-## 📂 リポジトリ構成
+## リポジトリ構成
 
 ```text
 .
@@ -32,7 +32,7 @@ Evidra は、自然言語やアップロードしたファイル（CSV/PDF）を
 │   └── ...
 └── render.yaml        # Render.com 用自動デプロイ設定
 ```
-## 🚀 ローカル開発環境構築
+## ローカル開発環境構築
 
 ### 前提条件
 - Node.js (v16+) / npm  
