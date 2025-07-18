@@ -3,7 +3,7 @@
 
 Evidra は、自然言語やアップロードしたファイル（CSV/PDF）をもとに戦略ロジックツリー（ROICツリー・ToC）を自動生成・可視化するフルスタックプロジェクトです。ローカル環境版ではRAGが使えます。Webアプリ版ではRender上のデータサイズ制限によりRAGが使えません。
 
-[https://evidra-prototype-01.onrender.com/](Webアプリ版)
+![https://evidra-prototype-01.onrender.com/](**Webアプリ版**)
 
 ![output_image](frontend/assets/output_image.png)
 
