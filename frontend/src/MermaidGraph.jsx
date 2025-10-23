@@ -22,7 +22,7 @@ export default function MermaidGraph({ chart }) {
     // Mermaid用DIVを作成
     const mdiv = document.createElement('div');
     mdiv.className = 'mermaid';
-    // ここがポイント：innerHTML ではなく textContent でコードのみ渡す
+    // innerHTML ではなく textContent でコードのみ渡す
     mdiv.textContent = chart.trim();
 
     // コンテナに追加して描画

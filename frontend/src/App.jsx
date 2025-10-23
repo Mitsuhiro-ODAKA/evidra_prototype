@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MermaidGraph from './MermaidGraph';
-import logo from '../assets/logo.png';  // ロゴ画像を assets フォルダに配置してください
+import logo from '../assets/logo.png';  // ロゴ画像を assets フォルダに配置
 
 // テキストをMermaid用のグラフ記法に変換する関数
 function convertToMermaid(treeText) {
